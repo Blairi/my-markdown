@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthLayout } from "../layout/AuthLayout"
-import { useForm } from "../../hooks";
+import { useDocumentTitle, useForm } from "../../hooks";
 import { Button, Field } from "../components"
 import { ErrorMessage, InputError } from "../../ui";
 
@@ -38,6 +38,8 @@ export const RegisterPage = () => {
     console.log(formState);
     
   }
+
+  useDocumentTitle("Register");
 
   return (
     <AuthLayout title='Create account'>

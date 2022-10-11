@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { useForm } from "../../hooks"
+import { useDocumentTitle, useForm } from "../../hooks"
 import { ErrorMessage, InputError } from "../../ui"
 import { Button, Field } from "../components"
 import { AuthLayout } from "../layout/AuthLayout"
@@ -35,6 +35,8 @@ export const LoginPage = () => {
     console.log(formState);
     
   }
+
+  useDocumentTitle("Log in");
 
   return (
     <AuthLayout title='Log in'>
