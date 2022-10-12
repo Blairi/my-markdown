@@ -10,7 +10,7 @@ export const SearchBar = () => {
         placeholder="Search markdown title..."
       />
 
-      <button className="w-1/12 text-xl flex items-center justify-center text-white bg-indigo-500">
+      <button className="w-1/12 text-xl flex items-center justify-center text-white bg-indigo-500 hover:bg-indigo-800 transition">
         <FaSearch />
       </button>
     </div>

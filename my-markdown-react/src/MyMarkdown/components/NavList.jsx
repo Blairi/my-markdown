@@ -7,7 +7,7 @@ export const NavList = () => {
     <nav>
       
       <Link to='/dashboard'>
-        <div className="flex items-center gap-3 rounded-md py-2 px-3 bg-indigo-500 text-white">
+        <div className="flex items-center gap-3 rounded-md py-2 px-3 bg-indigo-500 hover:bg-indigo-800 transition text-white">
           <AiFillSignal />
           Overview
         </div>

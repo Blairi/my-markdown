@@ -23,7 +23,7 @@ export const UserBar = () => {
 
         <div>
           <button
-            className='bg-red-500 text-white py-1 px-3 rounded-md'
+            className='bg-red-500 hover:bg-red-800 transition text-white py-1 px-3 rounded-md'
           >Log out</button>
         </div>
 

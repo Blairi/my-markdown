@@ -23,7 +23,7 @@ export const Dashboard = () => {
           </div>
 
           <button
-            className="flex items-center justify-between p-5 sm:py-0 sm:px-32 gap-2 bg-purple-500 text-white text-xl rounded-md font-bold shadow"
+            className="flex items-center justify-between p-5 sm:py-0 sm:px-32 gap-2 bg-purple-500 hover:bg-purple-800 transition text-white text-xl rounded-md font-bold shadow"
           >Create <MdCreate /></button>
 
         </div>
@@ -44,7 +44,7 @@ export const Dashboard = () => {
                 <div className="flex items-center justify-end gap-2 mt-2">
                   <span className="text-gray-200">Explore</span>
                   <Link
-                    className="text-4xl bg-indigo-600 rounded-full"
+                    className="text-4xl bg-indigo-600 hover:bg-indigo-800 transition rounded-full"
                   ><MdNavigateNext width='64em'/></Link>
                 </div>
 
@@ -68,7 +68,7 @@ export const Dashboard = () => {
                   <div className="flex items-center gap-2">
                     <span className="text-gray-200">View</span>
                     <Link
-                      className="text-4xl bg-purple-600 rounded-full"
+                      className="text-4xl bg-purple-600 hover:bg-purple-800 transition rounded-full"
                     ><MdNavigateNext width='64em'/></Link>
                   </div>
 
@@ -84,7 +84,7 @@ export const Dashboard = () => {
                 <div className="flex items-center justify-end gap-2 mt-2">
                   <span className="text-gray-200">View</span>
                   <Link
-                    className="text-4xl bg-indigo-600 rounded-full"
+                    className="text-4xl bg-indigo-600 hover:bg-indigo-800 transition rounded-full"
                   ><MdNavigateNext width='64em'/></Link>
                 </div>
 
