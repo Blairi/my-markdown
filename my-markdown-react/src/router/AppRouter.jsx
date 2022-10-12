@@ -9,6 +9,7 @@ export const AppRouter = () => {
       <Route path="auth/*" element={ <AuthRouter /> }/>
 
       <Route path="/*" element={ <MyMarkdownRouter /> }/>
+      
     </Routes>
   )
 }
