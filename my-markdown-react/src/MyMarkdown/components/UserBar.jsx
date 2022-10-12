@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/all"
 import profilePlaceholder from '../../assets/profile-placeholder.png';
-import { MenuContext } from "../contexts/dashboard";
+import { DashboardContext } from "../contexts/dashboard";
 
 export const UserBar = () => {
 
-  const { sideNav, setSideNav } = useContext( MenuContext );
+  const { sideNav, setSideNav } = useContext( DashboardContext );
   
   return (
     <div className='flex bg-white items-center justify-between px-3 py-4'>

@@ -2,11 +2,11 @@ import { useContext } from "react";
 import { Brand } from "../../ui"
 import { NavList } from "./";
 import { IoMdClose } from "react-icons/all"
-import { MenuContext } from "../contexts/dashboard";
+import { DashboardContext } from "../contexts/dashboard";
 
 export const SideNav = () => {
 
-  const { sideNav, setSideNav } = useContext( MenuContext );
+  const { sideNav, setSideNav } = useContext( DashboardContext );
 
   return (
     <aside className="min-h-screen py-10 px-5">

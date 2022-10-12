@@ -3,11 +3,11 @@ import { MdCreate, MdNavigateNext } from 'react-icons/all';
 import { MarkdownList, SearchBar } from "../components";
 import { Link } from "react-router-dom";
 import groupImage from "../../assets/undraw_engineering_team_a7n2.svg";
-import { MenuProvider } from "../contexts/dashboard";
+import { DashboardProvider } from "../contexts/dashboard";
 
 export const Dashboard = () => {
   return (
-    <MenuProvider>
+    <DashboardProvider>
 
       <DashboardLayout>
 
@@ -107,6 +107,6 @@ export const Dashboard = () => {
 
       </DashboardLayout>
       
-    </MenuProvider>
+    </DashboardProvider>
   )
 }
