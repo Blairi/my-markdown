@@ -1,10 +1,15 @@
+import { useContext } from "react";
 import { SideNav, UserBar } from "../components"
+import { MenuContext } from "../contexts/dashboard"
 
 export const DashboardLayout = ({ children }) => {
-  return (
-    <div className="grid grid-cols-[1fr_5fr] h-screen overflow-hidden">
 
-      <div>
+  const { sideNav } = useContext( MenuContext );
+
+  return (
+    <div className='grid h-screen overflow-hidden md:grid-cols-[1fr_5fr]'>
+
+      <div className={`bg-white shadow-xl md:shadow-none z-10 ${sideNav ? 'fixed min-w-[70vw] md:w-auto md:static' : 'hidden md:block'}`}>
         <SideNav />
       </div>
 
