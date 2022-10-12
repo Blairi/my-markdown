@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router-dom"
-import { Dashboard, HomePage } from "../pages"
+import { DashboardRouterProvider } from "./DashboardRouterProvider"
+import { HomePage } from "../pages"
 
 export const MyMarkdownRouter = () => {
   return (
     <Routes>
 
       <Route path="/" element={ <HomePage /> }/>
-      <Route path="/dashboard" element={ <Dashboard /> }/>
+      <Route path="/dashboard/*" element={ <DashboardRouterProvider /> }/>
 
     </Routes>
   )
