@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/all"
 import profilePlaceholder from '../../assets/profile-placeholder.png';
-import { DashboardContext } from "../contexts/dashboard";
+import { DashboardContext } from "../contexts";
 
 export const UserBar = () => {
 

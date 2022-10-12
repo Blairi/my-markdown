@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Brand } from "../../ui"
 import { NavList } from "./";
 import { IoMdClose } from "react-icons/all"
-import { DashboardContext } from "../contexts/dashboard";
+import { DashboardContext } from "../contexts";
 
 export const SideNav = () => {
 

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { SideNav, UserBar } from "../components"
-import { DashboardContext } from "../contexts/dashboard"
+import { DashboardContext } from "../contexts"
 
 export const DashboardLayout = ({ children }) => {
 
