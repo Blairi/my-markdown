@@ -17,7 +17,7 @@ export const DashboardLayout = ({ children }) => {
 
         <UserBar />
 
-        <main className="w-[95%] max-w-[1280px] py-10 mx-auto">
+        <main className="w-[90%] sm:w-[95%] max-w-[1280px] py-10 mx-auto">
           { children }
         </main>
 

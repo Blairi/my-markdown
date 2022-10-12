@@ -15,7 +15,7 @@ export const Dashboard = () => {
           <SearchBar />
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex flex-col sm:flex-row gap-5 justify-between">
 
           <div>
             <h2 className="text-4xl text-indigo-500 font-bold">Welcome!</h2>
@@ -23,16 +23,16 @@ export const Dashboard = () => {
           </div>
 
           <button
-            className="flex items-center gap-2 bg-purple-500 text-white text-xl rounded-md px-28 font-bold shadow"
+            className="flex items-center justify-between p-5 sm:py-0 sm:px-32 gap-2 bg-purple-500 text-white text-xl rounded-md font-bold shadow"
           >Create <MdCreate /></button>
 
         </div>
 
         <div className="mt-5">
 
-          <div className="bg-indigo-400 rounded-md shadow flex justify-between">
+          <div className="bg-indigo-400 rounded-md shadow flex flex-col sm:flex-row justify-between">
             
-            <div className="w-72 p-5">
+            <div className="w-full sm:w-72 p-5">
               <img src={ groupImage } alt="people"/>
             </div>
 
@@ -55,9 +55,9 @@ export const Dashboard = () => {
 
           <div className="mt-5">
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid sm:grid-cols-2 gap-3">
 
-              <div className="bg-purple-500 flex flex-col justify-between rounded-md text-white p-10 space-y-5 shadow">
+              <div className="bg-purple-500 flex flex-col justify-between rounded-md text-white p-5 sm:p-10 space-y-5 shadow">
 
                 <h3 className="text-xl">Markdowns created</h3>
 
@@ -76,7 +76,7 @@ export const Dashboard = () => {
 
               </div>
 
-              <div className="bg-indigo-500 flex flex-col justify-between rounded-md text-white p-10 shadow">
+              <div className="bg-indigo-500 flex flex-col justify-between rounded-md text-white p-5 sm:p-10 shadow">
 
                 <h3 className="text-xl">The last markdown edited</h3>
                 <span className="block text-right text-2xl font-bold">Test text</span>
