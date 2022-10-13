@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Route, Routes } from "react-router-dom";
 import { DashboardContext } from "../contexts"
-import { Dashboard } from "../pages";
+import { Dashboard, UserMarkdowns } from "../pages";
 
 export const DashboardRouterProvider = ({ children }) => {
 
@@ -13,6 +13,7 @@ export const DashboardRouterProvider = ({ children }) => {
       <Routes>
 
         <Route path="" element={ <Dashboard /> }/>
+        <Route path="markdowns" element={ <UserMarkdowns /> }/>
         
       </Routes>
 
