@@ -1,17 +1,23 @@
-import { Link } from "react-router-dom"
+import { NavListItem } from "./NavListItem";
 
 import { AiFillSignal } from "react-icons/ai";
+import { BsMarkdown } from 'react-icons/all';
 
 export const NavList = () => {
   return (
-    <nav>
-      
-      <Link to='/dashboard'>
-        <div className="flex items-center gap-3 rounded-md py-2 px-3 bg-indigo-500 hover:bg-indigo-800 transition text-white">
-          <AiFillSignal />
-          Overview
-        </div>
-      </Link>
+    <nav className="flex flex-col gap-5">
+
+      <NavListItem 
+        path='/dashboard'
+        navIcon={ <AiFillSignal /> }
+        text='Dashboard'
+      />
+
+      <NavListItem 
+        path='/dashboard/markdowns'
+        navIcon={ <BsMarkdown /> }
+        text='Markdowns'
+      />
 
     </nav>
   )
