@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import { DashboardLayout } from "../layout"
 import { MdCreate, MdNavigateNext } from 'react-icons/all';
 import { MarkdownList, SearchBar } from "../components";
-import { Link } from "react-router-dom";
+import { Hint } from "../../ui";
 import groupImage from "../../assets/undraw_engineering_team_a7n2.svg";
 
 export const Dashboard = () => {
@@ -9,7 +10,8 @@ export const Dashboard = () => {
 
     <DashboardLayout>
 
-      <div className="mb-10 shadow">
+      <div className="mb-10 space-y-2">
+        <Hint hint='Search in your markdowns...'/>
         <SearchBar />
       </div>
 
@@ -66,6 +68,7 @@ export const Dashboard = () => {
                 <div className="flex items-center gap-2">
                   <span className="text-gray-200">View</span>
                   <Link
+                    to='/dashboard/markdowns'
                     className="text-4xl bg-purple-600 hover:bg-purple-800 transition rounded-full"
                   ><MdNavigateNext width='64em'/></Link>
                 </div>
