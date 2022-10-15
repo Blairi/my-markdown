@@ -22,9 +22,10 @@ export const Dashboard = () => {
           <p className="text-gray-700">Create, edit, or view your markdowns.</p>
         </div>
 
-        <button
+        <Link
+          to='/markdowns/create'
           className="flex items-center justify-between p-5 sm:py-0 sm:px-32 gap-2 bg-purple-500 hover:bg-purple-800 transition text-white text-xl rounded-md font-bold shadow"
-        >Create <MdCreate /></button>
+        >Create <MdCreate /></Link>
 
       </div>
 
