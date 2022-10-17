@@ -4,7 +4,7 @@ export const useDocumentTitle = (title, prevailOnUnmount = false) => {
   const defaultTitle = useRef(document.title);
 
   useEffect(() => {
-    document.title = title;
+    document.title = `My Markdown | ${title}`;
   }, [title]);
 
   useEffect(() => () => {
