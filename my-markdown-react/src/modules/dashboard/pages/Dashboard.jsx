@@ -28,7 +28,7 @@ export const Dashboard = () => {
         </div>
 
         <Link
-          to='/markdowns/create'
+          to='/dashboard/markdowns/create'
           className="flex items-center justify-between p-5 sm:py-0 sm:px-32 gap-2 bg-purple-500 hover:bg-purple-800 transition text-white text-xl rounded-md font-bold shadow"
         >Create <MdCreate /></Link>
 
