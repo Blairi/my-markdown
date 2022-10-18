@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 export const MarkdownItem = () => {
   return (
-    <Link className="bg-gray-600 hover:brightness-105 transition rounded-md overflow-hidden w-80 shadow-md">
+    <Link 
+      to='/markdowns/1'
+      className="bg-gray-600 hover:brightness-105 transition rounded-md overflow-hidden w-80 shadow-md"
+    >
 
       <div className='py-2 overflow-hidden'>
         <div className='inline-block rotate-12 scale-[1.8]'>
