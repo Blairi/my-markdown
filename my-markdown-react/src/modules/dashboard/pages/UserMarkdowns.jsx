@@ -1,6 +1,5 @@
 import { DashboardLayout } from "../layout"
-import { SearchBar } from "../components"
-import { MarkdownList } from "../../../components"
+import { MarkdownList, SearchBar } from "../../../components"
 import { useDocumentTitle } from "../../../hooks";
 
 export const UserMarkdowns = () => {

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { DashboardLayout } from "../layout"
 import { useDocumentTitle } from "../../../hooks";
-import { MarkdownList } from "../../../components";
-import { SearchBar } from "../components";
+import { MarkdownList, SearchBar } from "../../../components";
 import { Hint } from "../../../ui";
 import { MdCreate, MdNavigateNext } from 'react-icons/all';
 import groupImage from "../../../assets/undraw_engineering_team_a7n2.svg";
@@ -45,11 +44,12 @@ export const Dashboard = () => {
           <div className="p-3 flex flex-col justify-end flex-1">
             <div className="bg-indigo-500 p-3 rounded-md text-white">
 
-              <h3 className="text-lg font-bold">Explore user's markdowns</h3>
+              <h3 className="text-lg font-bold">Explore user markdowns</h3>
 
               <div className="flex items-center justify-end gap-2 mt-2">
                 <span className="text-gray-200">Explore</span>
                 <Link
+                  to='/explore'
                   className="text-4xl bg-indigo-600 hover:bg-indigo-800 transition rounded-full"
                 ><MdNavigateNext width='64em'/></Link>
               </div>
