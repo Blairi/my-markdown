@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavItem } from "./";
+import { NavItem } from "../../../components";
 import { GiHamburgerMenu, IoMdClose, MdSpaceDashboard, BsMarkdown, IoCreate } from "react-icons/all"
 import { Brand } from "../../../ui/Brand"
 import profilePlaceholder from '../../../assets/profile-placeholder.png';
